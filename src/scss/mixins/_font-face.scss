@@ -1,10 +1,24 @@
 /* stylelint-disable */
-@mixin font-face($font-family, $url, $weight, $style) {
+@mixin font-face($font-family, $url, $weight, $style, $name) {
   @font-face {
     font-family: "#{$font-family}";
-    src: url('../fonts/#{$url}.woff2') format("woff2");
+    font-style: $style;
     font-weight: #{$weight};
     font-display: swap;
-    font-style: $style;
+    src: local('#{$name}'),
+      /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url('../fonts/#{$url}.woff2') format("woff2"),
+      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+      url('../fonts/#{$url}.woff') format("woff");
   }
 }
+
+
+// @font-face {
+//   font-family: 'Open Sans';
+//   font-style: normal;
+//   font-weight: 400;
+//   src: local('Open Sans Regular'),
+//        url('../fonts/open-sans-v20-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+//        url('../fonts/open-sans-v20-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+// }

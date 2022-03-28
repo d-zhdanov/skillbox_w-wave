@@ -1,3 +1,68 @@
 <header class="header">
-  <div class="container"></div>
+    <div class="header__top">
+      <div class="container">
+        <svg class="logo" aria-label="Логотип">
+          <use xlink:href="./img/images.svg#logo" />
+        </svg>
+        <nav class="nav-main" title="Меню">
+          <ul class="list-reset nav-main__list">
+            <li class="nav-main__item"><a href="#" class="nav-main__link">Подкасты</a></li>
+            <li class="nav-main__item"><a href="#" class="nav-main__link">Передачи</a></li>
+            <li class="nav-main__item"><a href="#" class="nav-main__link">Гости</a></li>
+            <li class="nav-main__item"><a href="#" class="nav-main__link">Плейлисты</a></li>
+            <li class="nav-main__item"><a href="#" class="nav-main__link">О нас</a></li>
+          </ul>
+        </nav>
+        <div class="buttons">
+          <button class="btn-reset search" data-graph-path="">
+            <svg class="search__img" aria-label="Поиск">
+              <use xlink:href="./img/sprite.svg#search" />
+            </svg>
+          </button>
+          <button class="btn-reset login" data-graph-path="">Вход</button>
+        </div>
+      </div>
+    </div>
+    <div class="header__bottom">
+      <div class="container">
+        <nav class="nav-bottom" title="">
+          <ul class="list-reset nav-bottom__list">
+            <li class="nav-bottom__item"><a href="#" class="nav-bottom__link">Новости</a></li>
+            <li class="nav-bottom__item"><a href="#" class="nav-bottom__link">Блоги</a></li>
+            <li class="nav-bottom__item"><a href="#" class="nav-bottom__link">Топы</a></li>
+            <li class="nav-bottom__item"><a href="#" class="nav-bottom__link">Опросы</a></li>
+            <li class="nav-bottom__item"><a href="#" class="nav-bottom__link">Рейтинги</a></li>
+            <li class="nav-bottom__item"><a href="#" class="nav-bottom__link">Реклама</a></li>
+            <li class="nav-bottom__item broadcast-group">
+              <div class="broadcast">
+                <button class="btn-reset broadcast__button" data-graph-path="">
+                  <svg class="broadcast__play" aria-label="Играть ранее в эфире">
+                    <use xlink:href="./img/sprite.svg#play_header_btn" />
+                  </svg>
+                </button>
+                <div class="broadcast__info">
+                  <span class="broadcast__desc">Ранее в эфире</span>
+                  <span class="broadcast__name">«Музыка»</span>
+                </div>
+              </div>
+              <div class="broadcast">
+                <button class="btn-reset broadcast__button" data-graph-path="">
+                  <svg class="broadcast__play" aria-label="Играть сейчас в эфире">
+                    <use xlink:href="./img/sprite.svg#play_header_btn" />
+                  </svg>
+                </button>
+                <div class="broadcast__info">
+                  <span class="broadcast__desc">Сейчас в эфире</span>
+                  <span class="broadcast__name">«Как так?»</span>
+                </div>
+              </div>
+            </li>
+            <li class="nav-bottom__item">
+              <div class="age-limit">12+</div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  <!-- <div class="container"></div> -->
 </header>

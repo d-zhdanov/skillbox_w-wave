@@ -1,0 +1,48 @@
+.hero {
+  .container {
+    background-image: image-set("../img/microphone.png" 1x, "../img/microphone_2x.png" 2x);
+    background-repeat: no-repeat;
+    background-size: auto 82.8%;
+    background-position: right $container-offset center;
+  }
+
+  &__container {
+    max-width: 635px;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 60px;
+    font-weight: 700;
+    margin-bottom: 13px;
+
+    &_name {
+      font-weight: 400;
+      font-style: italic;
+    }
+  }
+
+  &__desc {
+    line-height: 150%;
+    margin-bottom: 45px;
+
+    &_link {
+      color: $color-primary;
+    }
+  }
+
+  &__button {
+    width: 245px;
+    height: 70px;
+    font-weight: 500;
+    font-size: 20px;
+    color: $color-white;
+    background: $color-primary;
+    border-radius: 40px;
+  }
+}

@@ -1,1 +1,15 @@
-// @include font-face("Muller", "../fonts/MullerRegular", 400, normal);
+@include font-face("Muller", "MullerRegular", 400, normal, "Muller Regular");
+@include font-face("Muller", "MullerMedium", 500, normal, "Muller Medium");
+@include font-face("Muller", "MullerBold", 700, normal, "Muller Bold");
+@include font-face("Muller", "MullerLightItalic", 300, italic, "Muller Light Italic");
+@include font-face("Muller", "MullerRegularItalic", 400, italic, "Muller Regular Italic");
+@include font-face("Open Sans", "OpenSans-Regular", 400, normal, "Open Sans Regular");
+
+
+// $font-family:
+// Muller Regular
+// Muller Medium
+// Muller Regular Italic
+// Muller Bold
+// Open Sans Regular
+// Muller Light Italic

@@ -10,15 +10,20 @@ html {
 
 .page {
   height: 100%;
-  font-family: var(--font-family, sans-serif);
+  font-family: $main-font;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+  color: $color-black;
   -webkit-text-size-adjust: 100%;
 }
+
 
 .page__body {
   margin: 0;
   min-width: 320px;
   min-height: 100%;
-  font-size: 16px;
 }
 
 img {
@@ -80,8 +85,8 @@ a {
 
 .container {
   margin: 0 auto;
-  padding: 0 var(--container-offset);
-  max-width: var(--container-width);
+  padding: 0 $container-offset;
+  max-width: $container-width;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
@@ -104,4 +109,15 @@ a {
 
 .page--ios .dis-scroll {
   position: relative;
+}
+
+
+/* Общие стили */
+h1, h2, h3 {
+  margin: 0;
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 400;
 }
