@@ -1,14 +1,17 @@
 .hero {
+  padding: 38px 0 40px;
+
   .container {
     background-image: image-set("../img/microphone.png" 1x, "../img/microphone_2x.png" 2x);
     background-repeat: no-repeat;
-    background-size: auto 82.8%;
+    background-size: contain;
     background-position: right $container-offset center;
   }
 
   &__container {
     max-width: 635px;
-    min-height: 450px;
+    min-height: 372px;
+    padding-top: 4px;
     display: flex;
     flex-direction: column;
     justify-content: center;

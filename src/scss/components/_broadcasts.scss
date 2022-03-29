@@ -1,0 +1,233 @@
+.broadcasts {
+  padding-top: 108px;
+  padding-bottom: 94px;
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, minmax(260px, auto));
+    gap: 30px;
+  }
+
+
+  // TODO Скорее всего есть лучше решение
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    order: 3;
+    border: 1px solid $color-light_color;
+    box-sizing: border-box;
+
+    &:first-child {
+      margin-top: -13px;
+      border: none;
+      justify-content: flex-start;
+      order: 0;
+    }
+
+    &:nth-child(2) {
+      border: none;
+      order: 2;
+    }
+
+    &:nth-child(3),
+    &:nth-child(4),
+    &:nth-child(5) {
+      order: 1;
+    }
+  }
+
+  &__title {
+    margin-bottom: 11px;
+  }
+
+  &__author {
+    margin-bottom: 8px;
+    color: $color-text_gray;
+  }
+
+  // &__select {
+  //   width: 100%;
+  //   height: min-content;
+  //   margin-right: 58px;
+  //   padding: 0;
+  //   /* background-color: white; */
+  // }
+}
+
+.ba {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  &__mic {
+    margin-bottom: 20px;
+  }
+
+  &__btn {
+    width: 160px;
+    height: 40px;
+    margin-bottom: 12px;
+    font-weight: 500;
+    border: 2px solid $color-black;
+    box-sizing: border-box;
+    border-radius: 77px;
+
+    &-icon {
+      width: 18px;
+      height: 18px;
+      color: $color-black;
+      fill: none;
+      transform: translateY(3px);
+    }
+  }
+
+  &__info {
+    color: $color-text_gray;
+    line-height: 150%;
+
+    &-accent {
+      font-weight: 700;
+    }
+  }
+}
+
+.bi {
+  &__img {
+    display: block;
+    max-width: 255px;
+    width: 100%;
+    max-height: 148px;
+    object-fit: cover;
+  }
+
+  &__info {
+    padding: 21px 16px 18px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 3px;
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+  &__announcement {
+    display: block;
+    margin-bottom: auto;
+    font-size: 12px;
+    color: $color-text_gray;
+
+  }
+
+  &__more {
+    display: block;
+    width: fit-content;
+    font-style: italic;
+    text-align: start;
+    padding-right: 28px + 0px;
+    background-image: url('../img/sprite.svg#arrow_2right');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 28px 26px;
+  }
+}
+
+
+// Выпадающее меню
+.choices {
+  font-size: 16px;
+
+  &__inner {
+    min-height: 40px;
+    background-color: $color-light_color;
+    border: none;
+    border-radius: 10px;
+
+    .is-open & {
+      position: relative;
+      border-radius: 10px;
+      overflow: visible;
+
+      &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%;
+        border-left: 1px solid $color-shade_gray;
+        border-right: 1px solid $color-shade_gray;
+      }
+    }
+  }
+
+  &[data-type*='select-one']:after {
+    right: 17px;
+    border: solid $color-text_gray;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  &[data-type*='select-one'].is-open:after {
+    margin-top: -3px;
+    border: solid $color-text_gray;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(-135deg);
+  }
+
+  &__placeholder {
+    opacity: 1;
+  }
+
+  &__list {
+    &--single {
+      font-size: 16px;
+    }
+
+    &--dropdown,
+    &[aria-expanded] {
+      border: 1px solid $color-shade_gray;
+      border-top: none;
+      border-bottom-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+
+      & .choices__item {
+        font-size: 16px;
+        padding-right: 10px;
+      }
+
+      .is-open & {
+        border-color: $color-shade_gray;
+      }
+    }
+  }
+
+  &__item {
+    &--choice {
+      color: $color-text_gray;
+
+      &.is-highlighted {
+        color: $color-black;
+      }
+    }
+
+    &--choice:not(:last-child) {
+      border-bottom: 1px solid $color-shade_gray;
+    }
+  }
+}
+
+

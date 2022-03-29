@@ -13,6 +13,11 @@
       <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2"/>
       <path d="M21.6924 31.7965L31.5716 24.7996C32.1428 24.3998 32.1428 23.6002 31.5716 23.2004L21.6924 16.2035C20.9943 15.7037 20 16.1835 20 17.0031V30.9969C20 31.8165 20.9943 32.2963 21.6924 31.7965Z" fill="currentColor"/>
     </symbol>
+    <symbol id="archiveButton" viewBox="0 0 18 18">
+      <path d="M9 1.5L1.5 5.25L9 9L16.5 5.25L9 1.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M1.5 12.75L9 16.5L16.5 12.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M1.5 9L9 12.75L16.5 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
 
   </svg>
   <svg id="infoPlay" viewBox="0 0 10 13" xmlns="http://www.w3.org/2000/svg">
