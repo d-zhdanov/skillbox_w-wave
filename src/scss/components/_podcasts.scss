@@ -14,10 +14,41 @@
     margin-bottom: 60px;
   }
 
-  &__item {
-    display: flex;
-    justify-content: space-between;
+  &__more {
+    box-sizing: border-box;
+    display: block;
+    width: 246px;
+    height: 70px;
+    margin: 0 auto;
+    color: $color-primary;
+    font-weight: 500;
+    font-size: 20px;
+    border: 2px solid $color-primary;
+    border-radius: 40px;
+
+    &:focus-visible {
+      color: $color-white;
+      box-sizing: border-box;
+      border: 2px solid $color-primary_shade;
+      background-color: $color-primary_light;
+    }
+
+    &:hover {
+      color: $color-white;
+      background-color: $color-primary;
+    }
+
+    &:active {
+      color: $color-white;
+      border: none;
+      background-color: $color-primary_shade;
+    }
   }
+}
+
+.p-item {
+  display: flex;
+  justify-content: space-between;
 
   &__img {
     flex: 0 0 112px;
@@ -86,7 +117,6 @@
     }
   }
 
-
   &__stats {
     flex: 0 0 32px;
     display: flex;
@@ -95,44 +125,39 @@
     color: $color-text_gray;
     font-size: 16px;
 
-    &_style {
+    &-style {
       display: block;
       background-repeat: no-repeat;
+
+      &:hover {
+        color: $color-primary;
+
+        &-play {
+          background-color: $color-primary;
+        }
+      }
     }
 
-    &_style:not(:last-child) {
+    &-style:not(:last-child) {
       margin-right: 30px;
     }
 
-    &_play {
+    &-play {
       padding-left: 10px + 6px;
       background-image: url('../img/images.svg#infoPlay');
       background-size: 10px 13px;
     }
 
-    &_like {
+    &-like {
       padding-left: 13px + 6px;
       background-image: url('../img/images.svg#infoLike');
       background-size: 13px 12px;
     }
 
-    &_share {
+    &-share {
       padding-left: 12px + 6px;
       background-image: url('../img/images.svg#infoShare');
       background-size: 12px 13px;
     }
-  }
-
-  &__more {
-    box-sizing: border-box;
-    display: block;
-    width: 246px;
-    height: 70px;
-    margin: 0 auto;
-    color: $color-primary;
-    font-weight: 500;
-    font-size: 20px;
-    border: 2px solid $color-primary;
-    border-radius: 40px;
   }
 }

@@ -1,0 +1,7 @@
+@function vw($width, $desktop-width) {
+  @return $width / $desktop-width * 100vw;
+}
+
+@function vh($height, $desktop-height) {
+  @return $height / $desktop-height * 100vh;
+}

@@ -34,6 +34,7 @@ img {
 
 a {
   text-decoration: none;
+  color: $color-black;
 }
 
 .site-container {
@@ -46,6 +47,7 @@ a {
 
 .btn-reset {
   border: none;
+  outline: none;
   padding: 0;
   background: transparent;
   cursor: pointer;
@@ -87,6 +89,14 @@ a {
   margin: 0 auto;
   padding: 0 $container-offset;
   max-width: $container-width;
+
+  @include tablet {
+    padding: 0 $container-offset-tablet;
+  }
+
+  @include small-tablet {
+    padding: 0 $container-offset-small-tablet;
+  }
 }
 
 .js-focus-visible :focus:not(.focus-visible) {

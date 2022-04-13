@@ -5,7 +5,16 @@ $main-font: Muller, sans-serif;
 
 $content-width: 1110px;
 $container-offset: 30px;
+$container-offset-tablet: 100px;
+$container-offset-small-tablet: 114px;
 $container-width: $content-width + $container-offset * 2;
+
+//breakpoints
+$width-desktop-big: 1920px;
+$width-desktop: 1440px;
+$width-tablet: 1024px;
+$width-tablet-small: 768px;
+$width-mobile: 576px;
 
 // colors
 $color-white: #fff;

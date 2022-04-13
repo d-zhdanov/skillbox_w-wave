@@ -1,14 +1,25 @@
 .hero {
   padding: 38px 0 40px;
 
-  .container {
-    background-image: image-set("../img/microphone.png" 1x, "../img/microphone_2x.png" 2x);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: right $container-offset center;
+  @include tablet {
+    padding-bottom: 32px;
   }
 
   &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: image-set("../img/microphone-big.png" 1x, "../img/microphone-big@2x.png" 2x);
+    background-repeat: no-repeat;
+    background-size: 31.5% auto;
+    background-position: right center;
+
+    @include tablet {
+      background-size: 31% auto;
+    }
+  }
+
+  &__info {
     max-width: 635px;
     min-height: 372px;
     padding-top: 4px;
@@ -16,6 +27,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+
+    @include tablet {
+      max-width: 539px;
+      padding-top: 0;
+    }
   }
 
   &__title {
@@ -23,6 +39,10 @@
     font-size: 60px;
     font-weight: 700;
     margin-bottom: 13px;
+
+    @include tablet {
+      margin-bottom: 14px;
+    }
 
     &_name {
       font-weight: 400;
@@ -34,18 +54,39 @@
     line-height: 150%;
     margin-bottom: 45px;
 
-    &_link {
+    @include tablet {
+      margin-bottom: 23px;
+    }
+
+    &-link {
       color: $color-primary;
+      outline: none;
+
+      @include nav_hover-focus-active;
     }
   }
 
   &__button {
-    width: 245px;
-    height: 70px;
+    padding: 25px 54px;
     font-weight: 500;
     font-size: 20px;
+    line-height: 1;
     color: $color-white;
-    background: $color-primary;
+    background-color: $color-primary;
     border-radius: 40px;
+
+    &:focus-visible {
+      box-sizing: border-box;
+      border: 2px solid $color-primary_shade;
+      background-color: $color-primary_light;
+    }
+
+    &:hover {
+      background-color: $color-primary_light;
+    }
+
+    &:active {
+      background-color: $color-primary_shade;
+    }
   }
 }
