@@ -1,7 +1,7 @@
 <section class="broadcasts">
   <div class="container">
-    <ul class="list-reset broadcasts__list">
-      <li class="broadcasts__item">
+    <div class="broadcasts__container">
+      <div class="broadcasts__select">
         <h2 class="section-title broadcasts__title">Передачи</h2>
         <span class="broadcasts__author">Автор:</span>
         <select class="broadcasts__select bs" name="select" id="broadcastsAuthorsSelect">
@@ -10,8 +10,76 @@
           <option value="3">Пётр Дмитриевский</option>
           <option value="4">Татьяна Флеганова</option>
         </select>
-      </li>
-      <li class="broadcasts__item b-arc">
+      </div>
+      <ul class="list-reset broadcasts__list">
+        <li class="broadcasts__item b-item">
+          <picture>
+            <source srcset="./img/broadcasts/1@2x.png 2x, ./img/broadcasts/1.png 1x" />
+            <img class="b-item__img" src="./img/broadcasts/1.png" alt="О людях и книгах" />
+          </picture>
+          <div class="b-item__info">
+            <h3 class="b-item__title">О людях и книгах</h3>
+            <span class="b-item__announcement">Анонсируется отдельно</span>
+            <button class="btn-reset b-item__more" data-graph-path="">Подробнее</button>
+          </div>
+        </li>
+        <li class="broadcasts__item b-item">
+          <picture>
+            <source srcset="./img/broadcasts/2@2x.png 2x, ./img/broadcasts/2.png 1x" />
+            <img class="b-item__img" src="./img/broadcasts/2.png" alt="Графомания td." />
+          </picture>
+          <div class="b-item__info">
+            <h3 class="b-item__title">Графомания td.</h3>
+            <span class="b-item__announcement">По понедельникам в 10:00 </span>
+            <button class="btn-reset b-item__more" data-graph-path="">Подробнее</button>
+          </div>
+        </li>
+        <li class="broadcasts__item b-item">
+          <picture>
+            <source srcset="./img/broadcasts/3@2x.png 2x, ./img/broadcasts/3.png 1x" />
+            <img class="b-item__img" src="./img/broadcasts/3.png" alt="Не Рим, не Троя" />
+          </picture>
+          <div class="b-item__info">
+            <h3 class="b-item__title">Не Рим, не Троя</h3>
+            <span class="b-item__announcement">По вторникам в 12:00</span>
+            <button class="btn-reset b-item__more" data-graph-path="">Подробнее</button>
+          </div>
+        </li>
+        <li class="broadcasts__item b-item">
+          <picture>
+            <source srcset="./img/broadcasts/4@2x.png 2x, ./img/broadcasts/4.png 1x" />
+            <img class="b-item__img" src="./img/broadcasts/4.png" alt="Эрудит" />
+          </picture>
+          <div class="b-item__info">
+            <h3 class="b-item__title">Эрудит</h3>
+            <span class="b-item__announcement">По пятницам в 17:00</span>
+            <button class="btn-reset b-item__more" data-graph-path="">Подробнее</button>
+          </div>
+        </li>
+        <li class="broadcasts__item b-item">
+          <picture>
+            <source srcset="./img/broadcasts/5@2x.png 2x, ./img/broadcasts/5.png 1x" />
+            <img class="b-item__img" src="./img/broadcasts/5.png" alt="Тонкости эпох" />
+          </picture>
+          <div class="b-item__info">
+            <h3 class="b-item__title">Тонкости эпох</h3>
+            <span class="b-item__announcement">По субботам в 10:00</span>
+            <button class="btn-reset b-item__more" data-graph-path="">Подробнее</button>
+          </div>
+        </li>
+        <li class="broadcasts__item b-item">
+          <picture>
+            <source srcset="./img/broadcasts/6@2x.png 2x, ./img/broadcasts/6.png 1x" />
+            <img class="b-item__img" src="./img/broadcasts/6.png" alt="Живые мысли" />
+          </picture>
+          <div class="b-item__info">
+            <h3 class="b-item__title">Живые мысли</h3>
+            <span class="b-item__announcement">По воскресеньям в 15:30</span>
+            <button class="btn-reset b-item__more" data-graph-path="">Подробнее</button>
+          </div>
+        </li>
+      </ul>
+      <div class="b-arc">
         <picture aria-hidden="true">
           <source srcset="./img/mic@2x.png 2x, ./img/mic.png 1x" />
           <img class="b-arc__mic" src="./img/mic.png" alt="Микрофон" />
@@ -25,73 +93,8 @@
         <span class="b-arc__info">В архив попадают все передачи, которые вы пропустили!
           <span class="b-arc__info-accent">Enjoy :)</span>
         </span>
-      </li>
-      <li class="broadcasts__item b-item">
-        <picture>
-          <source srcset="./img/broadcasts/1@2x.png 2x, ./img/broadcasts/1.png 1x" />
-          <img class="b-item__img" src="./img/broadcasts/1.png" alt="О людях и книгах" />
-        </picture>
-        <div class="b-item__info">
-          <h3 class="b-item__title">О людях и книгах</h3>
-          <span class="b-item__announcement">Анонсируется отдельно</span>
-          <button class="btn-reset b-item__more" data-graph-path="">Подробнее</button>
-        </div>
-      </li>
-      <li class="broadcasts__item bi">
-        <picture>
-          <source srcset="./img/broadcasts/2@2x.png 2x, ./img/broadcasts/2.png 1x" />
-          <img class="b-item__img" src="./img/broadcasts/2.png" alt="Графомания td." />
-        </picture>
-        <div class="b-item__info">
-          <h3 class="b-item__title">Графомания td.</h3>
-          <span class="b-item__announcement">По понедельникам в 10:00 </span>
-          <button class="btn-reset b-item__more" data-graph-path="">Подробнее</button>
-        </div>
-      </li>
-      <li class="broadcasts__item bi">
-        <picture>
-          <source srcset="./img/broadcasts/3@2x.png 2x, ./img/broadcasts/3.png 1x" />
-          <img class="b-item__img" src="./img/broadcasts/3.png" alt="Не Рим, не Троя" />
-        </picture>
-        <div class="b-item__info">
-          <h3 class="b-item__title">Не Рим, не Троя</h3>
-          <span class="b-item__announcement">По вторникам в 12:00</span>
-          <button class="btn-reset b-item__more" data-graph-path="">Подробнее</button>
-        </div>
-      </li>
-      <li class="broadcasts__item bi">
-        <picture>
-          <source srcset="./img/broadcasts/4@2x.png 2x, ./img/broadcasts/4.png 1x" />
-          <img class="b-item__img" src="./img/broadcasts/4.png" alt="Эрудит" />
-        </picture>
-        <div class="b-item__info">
-          <h3 class="b-item__title">Эрудит</h3>
-          <span class="b-item__announcement">По пятницам в 17:00</span>
-          <button class="btn-reset b-item__more" data-graph-path="">Подробнее</button>
-        </div>
-      </li>
-      <li class="broadcasts__item bi">
-        <picture>
-          <source srcset="./img/broadcasts/5@2x.png 2x, ./img/broadcasts/5.png 1x" />
-          <img class="b-item__img" src="./img/broadcasts/5.png" alt="Тонкости эпох" />
-        </picture>
-        <div class="b-item__info">
-          <h3 class="b-item__title">Тонкости эпох</h3>
-          <span class="b-item__announcement">По субботам в 10:00</span>
-          <button class="btn-reset b-item__more" data-graph-path="">Подробнее</button>
-        </div>
-      </li>
-      <li class="broadcasts__item bi">
-        <picture>
-          <source srcset="./img/broadcasts/6@2x.png 2x, ./img/broadcasts/6.png 1x" />
-          <img class="b-item__img" src="./img/broadcasts/6.png" alt="Живые мысли" />
-        </picture>
-        <div class="b-item__info">
-          <h3 class="b-item__title">Живые мысли</h3>
-          <span class="b-item__announcement">По воскресеньям в 15:30</span>
-          <button class="btn-reset b-item__more" data-graph-path="">Подробнее</button>
-        </div>
-      </li>
-    </ul>
+      </div>
+    </div>
   </div>
 </section>
+111

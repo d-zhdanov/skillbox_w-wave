@@ -14,8 +14,8 @@
     background-size: 31.5% auto;
     background-position: right center;
 
-    @include tablet {
-      background-size: 31% auto;
+    @include tablet-950 {
+      background: none;
     }
   }
 
@@ -31,6 +31,10 @@
     @include tablet {
       max-width: 539px;
       padding-top: 0;
+    }
+
+    @include tablet-950 {
+      max-width: 100%;
     }
   }
 

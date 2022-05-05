@@ -8,7 +8,10 @@
         <svg class="logo" aria-label="Логотип">
           <use xlink:href="./img/images.svg#logo" />
         </svg>
-        <nav class="nav-main" title="Меню">
+        <button class="burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+          <span class="burger__line"></span>
+        </button>
+        <nav class="nav-main" title="Меню" data-menu>
           <ul class="list-reset nav-main__list">
             <li class="nav-main__item"><a href="#" class="nav-main__link">Подкасты</a></li>
             <li class="nav-main__item"><a href="#" class="nav-main__link">Передачи</a></li>
@@ -67,6 +70,11 @@
               <span class="on-air__name">«Как так?»</span>
             </div>
           </div>
+          <button class="btn-reset on-air__button on-air__button-small-tablet" data-graph-path="">
+            <svg class="on-air__play" aria-label="Играть сейчас в эфире">
+              <use xlink:href="./img/sprite.svg#play_header_btn" />
+            </svg>
+          </button>
         </div>
         <div class="age-limit">
           <span class="age-limit__age">12+</span>
