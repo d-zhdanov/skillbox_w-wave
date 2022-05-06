@@ -17,6 +17,7 @@
   "devDependencies": {
     "@babel/core": "^7.16.7",
     "@babel/preset-env": "^7.16.7",
+    "accordion-js": "^3.3.0",
     "babel-loader": "^8.2.3",
     "browser-sync": "^2.26.14",
     "choices.js": "^10.1.0",
