@@ -1,5 +1,5 @@
 .broadcasts {
-  padding-top: 108px;
+  padding-top: 107px;
   padding-bottom: 94px;
 
   &__container {
@@ -16,6 +16,7 @@
 
   &__select {
     width: 100%;
+    margin-top: -12px;
     margin-bottom: 47px;
 
     @include tablet-950 {
@@ -48,11 +49,12 @@
   }
 
   &__title {
-    margin-bottom: 11px;
+    margin-bottom: 10px;
   }
 
   &__author {
-    margin-bottom: 8px;
+    display: block;
+    margin-bottom: 9px;
     color: $color-text_gray;
   }
 }
@@ -69,10 +71,12 @@
   }
 
   &__btn {
-    width: 160px;
-    height: 40px;
+    width: fit-content;
     margin-bottom: 12px;
+    padding: 5px 43px;
     font-weight: 500;
+    line-height: 24px;
+    vertical-align: top;
     border: 2px solid $color-black;
     box-sizing: border-box;
     border-radius: 77px;
